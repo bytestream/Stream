@@ -23,7 +23,7 @@
  * @package    Stream
  * @subpackage UnitTests
  */
-abstract class Horde_Stream_Stream_TestBase extends Horde_Test_Case
+abstract class Horde_Stream_Stream_TestBase extends \PHPUnit\Framework\TestCase
 {
     abstract protected function _getOb();
 
