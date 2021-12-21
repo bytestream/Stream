@@ -1,6 +1,6 @@
 {
-    "name": "horde/stream",
-    "description": "PHP streams library",
+    "name": "bytestream/horde-stream",
+    "description": "Horde PHP streams library",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Stream",
     "license": "LGPL-2.1",
@@ -11,30 +11,22 @@
             "role": "lead"
         }
     ],
-    "version": "1.6.4",
-    "time": "2017-11-11",
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
-    ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2"
+        "php": "^7.4 || ^8.0",
+        "bytestream/horde-exception": "^2"
     },
-    "suggest": {
-        "pear-pear.horde.org/Horde_Stream_Wrapper": "^2.1",
-        "pear-pear.horde.org/Horde_Test": "^2.1",
-        "pear-pear.horde.org/Horde_Util": "^2"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Stream": "1.*",
-        "pear-horde/Horde_Stream": "1.*"
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "bytestream/horde-stream-wrapper": "^2.2"
     },
     "autoload": {
         "psr-0": {
             "Horde_Stream": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Horde_Stream": "test/"
         }
     }
 }
