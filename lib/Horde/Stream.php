@@ -607,7 +607,6 @@ class Horde_Stream implements Serializable
      */
     public function unserialize($data)
     {
-
         $this->__unserialize(json_decode($data, true));
     }
 
